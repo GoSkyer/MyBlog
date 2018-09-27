@@ -1,7 +1,8 @@
 package me.galaxy.blog;
 
+
 import com.github.pagehelper.PageInfo;
-import feign.Param;
+
 import me.galaxy.blog.bean.ContentBean;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.*;
