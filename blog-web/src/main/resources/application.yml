@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: blog-web
+  freemarker:
+    template-loader-path: classpath:/templates/
+    charset: UTF-8
+    content-type: text/html
+    cache: true
+    request-context-attribute: request
+
+eureka:
+  client:
+    register-with-eureka: false # 不向注册中心注册自己
+    fetch-registry: true        # 是否检索服务
+    service-url:
+      defaultZone: http://localhost:9000/eureka/  # 注册中心访问地址
