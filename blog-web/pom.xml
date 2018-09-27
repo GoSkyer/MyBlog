@@ -8,7 +8,7 @@
     <parent>
         <artifactId>blog</artifactId>
         <groupId>me.galaxy</groupId>
-        <version>0.1.0</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>blog-web</artifactId>
@@ -20,7 +20,7 @@
         <dependency>
             <groupId>me.galaxy</groupId>
             <artifactId>common-api</artifactId>
-            <version>0.1.0</version>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>

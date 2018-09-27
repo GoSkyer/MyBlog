@@ -6,7 +6,7 @@
     <parent>
         <artifactId>blog</artifactId>
         <groupId>me.galaxy</groupId>
-        <version>0.1.0</version>
+        <version>1.0.0</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
