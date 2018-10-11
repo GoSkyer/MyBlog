@@ -12,16 +12,6 @@ spring:
         username: root
         password: root
 
-eureka:
-  instance:
-    instance-id: blog-service
-    prefer-ip-address: true
-  client:
-    register-with-eureka: true
-    fetch-registry: false
-    service-url:
-      defaultZone: http://127.0.0.1:9000/eureka/
-
 pagehelper:
   helperDialect: mysql
   reasonable: true
