@@ -1,0 +1,12 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: blog-config
+  profiles:
+      active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config/

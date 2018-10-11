@@ -8,6 +8,9 @@
     <groupId>me.galaxy</groupId>
     <artifactId>blog</artifactId>
     <version>1.0.0</version>
+    <modules>
+        <module>config</module>
+    </modules>
 
     <packaging>pom</packaging>
 
