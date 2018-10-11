@@ -1,10 +1,4 @@
-#server
-server:
-  port: 9001
-
 spring:
-  application:
-    name: blog-service
   datasource:
       druid:
         driverClassName: com.mysql.jdbc.Driver
