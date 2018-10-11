@@ -2,12 +2,14 @@ package me.galaxy.blog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
+@EnableEurekaClient
 @SpringBootApplication
-public class SpringbootApplication {
+public class ManagementApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootApplication.class, args);
+        SpringApplication.run(ManagementApplication.class, args);
     }
 
 }

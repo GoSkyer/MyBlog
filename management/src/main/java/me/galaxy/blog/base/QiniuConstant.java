@@ -2,11 +2,9 @@ package me.galaxy.blog.base;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ConfigurationProperties(prefix = "qiniu")
-@PropertySource(value = "application.yml")
 public class QiniuConstant {
 
     private String accessKey;

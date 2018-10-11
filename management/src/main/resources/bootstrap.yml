@@ -1,0 +1,21 @@
+#server:
+#  port: 9001
+
+eureka:
+  instance:
+    instance-id: blog-management
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka/
+
+spring:
+  application:
+    name: blog
+  cloud:
+    config:
+#      uri: http://localhost:9002
+      discovery:
+        enabled: true
+        service-id: blog-config
+      profile: management
+

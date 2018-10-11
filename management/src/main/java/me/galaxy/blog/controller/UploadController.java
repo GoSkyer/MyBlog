@@ -1,9 +1,10 @@
 package me.galaxy.blog.controller;
 
-import me.galaxy.blog.utils.QiniuUploadUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import me.galaxy.blog.utils.QiniuUploadUtils;
 
 @RestController
 @RequestMapping("/upload")

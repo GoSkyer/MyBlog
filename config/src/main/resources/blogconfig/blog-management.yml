@@ -1,5 +1,15 @@
+# management
+
+server:
+  port: 9004
+
+spring:
+  application:
+    name: blog-management
+
 qiniu:
   accessKey: -LuNh5177fZ3E6Bd0LKTjTm2L7Onzk-QGKVAX5-a
   secretKey: V8U4dj8g5R0M1k3DmG6lKSRCwyuKwM1L4Wlr7C_v
   bucket: blog
   path:
+
