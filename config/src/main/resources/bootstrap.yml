@@ -16,3 +16,10 @@ eureka:
       defaultZone: http://127.0.0.1:9000/eureka/
   instance:
     instance-id: blog-config
+
+encrypt:
+  key-store:
+    location: classpath:/gosky-blog.jks
+    alias: blog
+    password: 123456
+    secret: 123456

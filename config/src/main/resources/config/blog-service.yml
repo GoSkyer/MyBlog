@@ -8,9 +8,9 @@ spring:
   datasource:
       druid:
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost/blog?characterEncoding=utf-8
+        url: jdbc:mysql://47.75.154.244:53306/blog?characterEncoding=utf-8
         username: root
-        password: root
+        password: '{cipher}AQBiBMQL//Z2x3apQy+DJegOpjVnG2dOy+yDiUovRM3jj3eE2ExlD78i0HMAgzvm19KXDyzWARJfIVyszyw/A5nNQcx+3wYbf79B/O39cZr0gSZ/qo0wGIZMRpIVWKCQXvapTnYbMg0M2CBDz7cq73weSv2YibU8r0zsKYHTqL05Q39kMWWCMue1HVAWOvDfTJGWj+4j4c2kCQN2AQHfRgwU99/wNZCqeDszuxtrKtBIARBHnOinsPoZD8r5fUFD11iqGzLrlzUYzv4IpoVPCFQIxOThdVqFyQQcoh3clFKASMQ64DZrVPUaA87+Uaq+dUFC9sKB+48+9aS0g6HjhrlEKjLYM0Jw5aNQPQuX/5xuw6f+8/Mtq0GM5VwL6PYdkiU='
 
 pagehelper:
   helperDialect: mysql
