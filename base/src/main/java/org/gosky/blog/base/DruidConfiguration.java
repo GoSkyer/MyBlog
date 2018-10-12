@@ -1,6 +1,7 @@
 package org.gosky.blog.base;
 
 import com.alibaba.druid.filter.Filter;
+import com.alibaba.druid.filter.logging.Log4jFilter;
 import com.alibaba.druid.filter.stat.StatFilter;
 import com.alibaba.druid.pool.DruidDataSource;
 
@@ -8,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.Collections;
+import java.util.Arrays;
 
 @Configuration
 public class DruidConfiguration {
@@ -17,7 +18,8 @@ public class DruidConfiguration {
     @Bean(initMethod = "init", destroyMethod = "close")
     public DruidDataSource dataSource() {
         DruidDataSource dds = new DruidDataSource();
-        dds.setProxyFilters(Collections.singletonList(statFilter()));
+        dds.setProxyFilters(Arrays.asList(statFilter(),logFilter()));
+//        dds.setProxyFilters(Collections.singletonList(logFilter()));
         return dds;
     }
 
@@ -30,4 +32,14 @@ public class DruidConfiguration {
         return filter;
     }
 
+
+    @Bean
+    public Filter logFilter() {
+        Log4jFilter logFilter = new Log4jFilter();
+        logFilter.setDataSourceLogEnabled(true);
+        logFilter.setStatementLogEnabled(false);
+        logFilter.setStatementLogErrorEnabled(true);
+        logFilter.setStatementExecutableSqlLogEnable(true);
+        return logFilter;
+    }
 }
