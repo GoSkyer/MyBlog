@@ -1,4 +1,4 @@
-package me.galaxy.blog;
+package org.gosky.blog.base;
 
 import com.alibaba.druid.filter.Filter;
 import com.alibaba.druid.filter.stat.StatFilter;
