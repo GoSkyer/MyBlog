@@ -1,6 +1,6 @@
 package org.gosky.blog.mapper;
 
-import me.galaxy.blog.bean.ContentBean;
+import org.gosky.blog.bean.ContentBean;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

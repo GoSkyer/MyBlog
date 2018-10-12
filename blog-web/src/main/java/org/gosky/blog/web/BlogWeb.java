@@ -1,9 +1,9 @@
 package org.gosky.blog.web;
 
-import me.galaxy.blog.CommentFeign;
-import me.galaxy.blog.ContentFeign;
-import me.galaxy.blog.bean.CommentDto;
-import me.galaxy.blog.bean.ContentBean;
+import org.gosky.blog.CommentFeign;
+import org.gosky.blog.ContentFeign;
+import org.gosky.blog.bean.CommentDto;
+import org.gosky.blog.bean.ContentBean;
 import org.markdownj.MarkdownProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,8 +1,8 @@
 package org.gosky.blog.service;
 
-import me.galaxy.blog.bean.CommentDto;
-import me.galaxy.blog.mapper.CommentMapper;
-import me.galaxy.blog.mapper.ContentMapper;
+import org.gosky.blog.bean.CommentDto;
+import org.gosky.blog.mapper.CommentMapper;
+import org.gosky.blog.mapper.ContentMapper;
 
 import org.gosky.blog.mapper.CommentMapper;
 import org.springframework.web.bind.annotation.RequestMapping;

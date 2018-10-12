@@ -1,7 +1,5 @@
 package org.gosky.blog.service;
 
-import me.galaxy.blog.mapper.AboutMapper;
-
 import org.gosky.blog.mapper.AboutMapper;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

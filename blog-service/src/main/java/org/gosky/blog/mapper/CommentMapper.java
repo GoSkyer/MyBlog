@@ -1,8 +1,8 @@
 package org.gosky.blog.mapper;
 
-import me.galaxy.blog.bean.CommentDto;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.gosky.blog.bean.CommentDto;
 
 import java.util.List;
 

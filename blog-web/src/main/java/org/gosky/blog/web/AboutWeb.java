@@ -1,6 +1,6 @@
 package org.gosky.blog.web;
 
-import me.galaxy.blog.AboutFeign;
+import org.gosky.blog.AboutFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

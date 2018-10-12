@@ -2,8 +2,8 @@ package org.gosky.blog.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import me.galaxy.blog.bean.ContentBean;
-import me.galaxy.blog.mapper.ContentMapper;
+import org.gosky.blog.bean.ContentBean;
+import org.gosky.blog.mapper.ContentMapper;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

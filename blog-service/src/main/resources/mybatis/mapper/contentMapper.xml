@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="me.galaxy.blog.mapper.ContentMapper">
+<mapper namespace="org.gosky.blog.mapper.ContentMapper">
 
-    <resultMap type="me.galaxy.blog.bean.ContentBean" id="contentBean">
+    <resultMap type="org.gosky.blog.bean.ContentBean" id="contentBean">
         <result column="id" property="id"/>
         <result column="user_id" property="userId"/>
         <result column="user_name" property="userName"/>
@@ -43,7 +43,7 @@
         select bc.group_name as name,bc.group_id as id,count(bc.group_id) as count from blog_content bc group by bc.group_id, bc.group_name order by count DESC limit 4
     </select>
 
-    <insert id="addContent" useGeneratedKeys="true" keyProperty="id" parameterType="me.galaxy.blog.bean.ContentBean">
+    <insert id="addContent" useGeneratedKeys="true" keyProperty="id" parameterType="org.gosky.blog.bean.ContentBean">
         INSERT INTO
         blog_content(user_id,user_name,group_id,group_name,title,content,description)
         VALUES

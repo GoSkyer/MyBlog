@@ -1,8 +1,8 @@
 package org.gosky.blog.web;
 
 import com.github.pagehelper.PageInfo;
-import me.galaxy.blog.ContentFeign;
-import me.galaxy.blog.bean.ContentBean;
+import org.gosky.blog.ContentFeign;
+import org.gosky.blog.bean.ContentBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

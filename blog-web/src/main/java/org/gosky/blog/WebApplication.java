@@ -6,8 +6,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
-@EnableFeignClients(basePackages={"me.galaxy.blog"})
-@ComponentScan("me.galaxy.blog")
+@EnableFeignClients(basePackages={"org.gosky.blog"})
+@ComponentScan("org.gosky.blog")
 @EnableEurekaClient
 @SpringBootApplication
 public class WebApplication {

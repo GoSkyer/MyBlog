@@ -1,6 +1,7 @@
-package org.gosky.blog.config;
+package org.gosky.blog.base;
 
 import com.github.pagehelper.PageHelper;
+
 import org.apache.ibatis.plugin.Interceptor;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
@@ -13,9 +14,10 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
-import javax.sql.DataSource;
 import java.io.IOException;
 import java.util.Properties;
+
+import javax.sql.DataSource;
 
 @Configuration
 public class MyBatisConfiguration {
@@ -43,7 +45,7 @@ public class MyBatisConfiguration {
         }
 
         // 设置别名包
-        sqlSessionFactoryBean.setTypeAliasesPackage("me.galaxy.blog.bean");
+        sqlSessionFactoryBean.setTypeAliasesPackage("org.gosky.blog.bean");
 
         sqlSessionFactoryBean.setPlugins(new Interceptor[]{pageHelper});
 
@@ -54,7 +56,7 @@ public class MyBatisConfiguration {
     @ConditionalOnBean(SqlSessionFactoryBean.class)
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
-        mapperScannerConfigurer.setBasePackage("me.galaxy.blog.mapper");
+        mapperScannerConfigurer.setBasePackage("org.gosky.blog.mapper");
         return mapperScannerConfigurer;
     }
 

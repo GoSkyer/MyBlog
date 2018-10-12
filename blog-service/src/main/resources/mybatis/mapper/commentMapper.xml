@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="me.galaxy.blog.mapper.CommentMapper">
+<mapper namespace="org.gosky.blog.mapper.CommentMapper">
 
-    <resultMap type="me.galaxy.blog.bean.CommentDto" id="comment">
+    <resultMap type="org.gosky.blog.bean.CommentDto" id="comment">
         <result column="id" property="id"/>
         <result column="blog_id" property="blogId"/>
         <result column="blog_name" property="blogName"/>
@@ -17,7 +17,7 @@
         select * from blog_comment bc where bc.blog_id = #{blogId} and bc.status = 0 order by bc.create_date DESC
     </select>
 
-    <insert id="addComment" useGeneratedKeys="true" keyProperty="id" parameterType="me.galaxy.blog.bean.CommentDto">
+    <insert id="addComment" useGeneratedKeys="true" keyProperty="id" parameterType="org.gosky.blog.bean.CommentDto">
         INSERT INTO
         blog_comment(blog_id,blog_name,user_id,user_name,content)
         VALUES
