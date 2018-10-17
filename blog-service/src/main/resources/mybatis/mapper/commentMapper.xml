@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.gosky.blog.mapper.CommentMapper">
 
     <resultMap type="org.gosky.blog.bean.CommentDto" id="comment">
@@ -14,14 +15,19 @@
     </resultMap>
 
     <select id="getCommentByBlogId" resultMap="comment">
-        select * from blog_comment bc where bc.blog_id = #{blogId} and bc.status = 0 order by bc.create_date DESC
+        SELECT *
+        FROM blog_comment bc
+        WHERE bc.blog_id = #{blogId} AND bc.status = 0
+        ORDER BY bc.create_date DESC
     </select>
 
-    <insert id="addComment" useGeneratedKeys="true" keyProperty="id" parameterType="org.gosky.blog.bean.CommentDto">
+    <insert id="addComment" useGeneratedKeys="true" keyProperty="id"
+            parameterType="org.gosky.blog.bean.CommentDto">
         INSERT INTO
-        blog_comment(blog_id,blog_name,user_id,user_name,content)
+            blog_comment (blog_id, blog_name, user_id, user_name, content)
         VALUES
-        (#{blogId,jdbcType=INTEGER},#{blogName},#{userId,jdbcType=INTEGER},#{userName},#{content})
+            (#{blogId,jdbcType=INTEGER}, #{blogName}, #{userId,jdbcType=INTEGER}, #{userName},
+             #{content})
     </insert>
 
 </mapper>
